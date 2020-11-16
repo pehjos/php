@@ -2,7 +2,7 @@
 <?php
 if (isset($_POST['submit'])){
 $target="image/".basename($_FILES['image']['name']);
-$conn = mysqli_connect('localhost','root','Pehjos','news');
+$conn = mysqli_connect('localhost','root','mypassword','news');
  if(mysqli_connect_errno()){
  echo"fail to connect to database";
 }
